@@ -21,6 +21,45 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>commons-scxml</groupId>
+    <artifactId>commons-scxml</artifactId>
+    <version>0.9</version>
+</dependency>
+<dependency>
+    <groupId>commons-logging</groupId>
+    <artifactId>commons-logging</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<dependency>
+    <groupId>commons-jexl</groupId>
+    <artifactId>commons-jexl</artifactId>
+    <version>1.1</version>
+</dependency>
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>xalan</artifactId>
+    <version>2.7.1</version>
+</dependency>
+    <dependency>
+    <groupId>org.jeasy</groupId>
+    <artifactId>easy-states</artifactId>
+    <version>1.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-sample-fsm -->
+<dependency>
+    <groupId>com.typesafe.akka</groupId>
+    <artifactId>akka-sample-fsm_2.10</artifactId>
+    <version>2.2.5</version>
+    <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+<dependency>
+    <groupId>com.typesafe.akka</groupId>
+    <artifactId>akka-actor_2.10</artifactId>
+    <version>2.3.11</version>
+</dependency>
+
   </dependencies>
    <build>
    <sourceDirectory>src/main/java</sourceDirectory>
