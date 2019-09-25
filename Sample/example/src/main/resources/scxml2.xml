@@ -1,0 +1,30 @@
+<?xml version="1.0"?>  
+<scxml xmlns="http://www.w3.org/2005/07/scxml" xmlns:cs="http://commons.apache.org/scxml"
+	version="0.9" 
+	initialstate="RESERVED">
+
+	<state id="RESERVED">
+		<!-- seat has been reserved for customer for 20 mins -->
+		<transition event="BOOK" target="BOOKED" />
+	</state>
+
+	<state id="BOOKED">
+		<!-- ticket has been purchased by customer. -->
+		<transition event="PAYMENT" target="PAID" />
+		<transition event="CANCEL" target="CANCELLED" />
+	</state>
+
+	<state id="PAID" final="true">
+		<!-- customer has paid for ticket and received it. -->
+		<transition event="REFUND" target="REFUNDED" />
+	</state>
+
+	<state id="CANCELLED" final="true">
+		<!-- a technical cancellation because for example the system crashed before payment was complete. -->
+	</state>
+
+	<state id="REFUNDED" final="true">
+	<!-- customer has had their ticket refunded, because for example they do not wish to travel. -->
+	</state>
+
+</scxml>
